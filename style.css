@@ -1,0 +1,522 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#f5f7fb;
+    color:#333;
+    padding:20px;
+
+}
+
+header{
+
+    background:#1f4e79;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    margin-bottom:25px;
+
+}
+
+header h1{
+
+    margin-bottom:10px;
+
+}
+
+.nav-links{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:15px;
+
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    padding:8px 18px;
+    background:#2d6ca2;
+    border-radius:8px;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    background:#0d9b57;
+
+}
+
+
+
+/* ===========================
+Dashboard Cards
+=========================== */
+
+.container{
+    width:90%;
+    margin:35px auto;
+}
+
+.dashboard-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+
+}
+
+.dashboard-card{
+
+    background:#fff;
+    border-radius:18px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.dashboard-card .icon{
+
+    font-size:42px;
+
+    margin-bottom:12px;
+
+}
+
+.dashboard-card h3{
+
+    color:#555;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.dashboard-card h2{
+
+    color:#174a7e;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* ===========================
+Members
+=========================== */
+
+.member-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+
+}
+
+.member-card{
+
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    text-align:center;
+
+}
+
+.member-card img{
+
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-bottom:10px;
+
+}
+
+
+
+/* ===========================
+Expense Split
+=========================== */
+
+.split-card{
+
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    margin-bottom:30px;
+
+}
+
+.split-card h2{
+
+    text-align:center;
+    margin-bottom:15px;
+    color:#1f4e79;
+
+}
+
+#expenseSplit{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+#expenseSplit td{
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+
+}
+
+#expenseSplit td:last-child{
+
+    text-align:right;
+    font-weight:bold;
+    color:#0d9b57;
+
+}
+
+
+
+/* ===========================
+Expense Cards
+=========================== */
+
+.expense-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+
+}
+
+.expense-card{
+
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+.expense-card h3{
+
+    margin-bottom:15px;
+    color:#1f4e79;
+
+}
+
+.expense-item{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+
+}
+
+.expense-left small{
+
+    color:#777;
+
+}
+
+.expense-right{
+
+    font-weight:bold;
+    color:#0d9b57;
+
+}
+
+.card-total{
+
+    margin-top:15px;
+    text-align:right;
+    font-size:18px;
+    font-weight:bold;
+    color:#1f4e79;
+
+}
+
+
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.expense-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.member-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* ===========================
+   Yatra Page
+=========================== */
+
+.timeline-section{
+
+    width:90%;
+    margin:40px auto;
+
+}
+
+.timeline-section h2{
+
+    color:#174a7e;
+    margin-bottom:25px;
+    font-size:34px;
+    text-align:center;
+
+}
+
+.timeline{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+
+}
+
+.timeline-item{
+
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+.timeline-item h3{
+
+    color:#174a7e;
+    font-size:28px;
+    margin-bottom:10px;
+
+}
+
+.timeline-item p{
+
+    color:#555;
+    font-size:20px;
+
+}
+
+
+/* ===========================
+   Photo Gallery
+=========================== */
+
+.gallery-section{
+
+    width:90%;
+    margin:60px auto;
+
+}
+
+.gallery-section h2{
+
+    color:#174a7e;
+    margin-bottom:30px;
+    text-align:center;
+    font-size:34px;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:25px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+    transition:.3s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.timeline{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery img{
+
+    height:240px;
+
+}
+
+}
+/* ==========================
+   Members Page
+========================== */
+
+.members-grid{
+
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+}
+
+.member-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.member-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+.member-card img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+
+}
+
+.member-card h3{
+
+    color:#174a7e;
+
+    margin-bottom:10px;
+
+    font-size:26px;
+
+}
+
+.member-card p{
+
+    margin:6px 0;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+.member-card a{
+
+    color:#174a7e;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.member-card a:hover{
+
+    text-decoration:underline;
+
+}
